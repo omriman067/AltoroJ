@@ -625,7 +625,7 @@
       "type": "object",
       "required": [
         "username",
-        "passwrod1",
+        "password1",
         "password2"
       ],
       "properties": {
