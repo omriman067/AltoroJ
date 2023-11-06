@@ -71,7 +71,7 @@ Requirements are :
 ```docker run -p8080:8080 altoromutual```
 
 Windows Installation: 
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) - 
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Download this repository as zip and extract it
 3. Open powershell and build the image from the Altoro base directory: 
 ```Get-Content Dockerfile | docker build - -t altoroj```
