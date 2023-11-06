@@ -76,4 +76,4 @@ Windows Installation:
 3. Open powershell and build the image from the Altoro base directory: 
 ```Get-Content Dockerfile | docker build - -t altoroj```
 4. Reopen docker-desktop
-5. Go to the new container, run it and set the optional options: set the port to and the name of the container
+5. Go to the new container, run it and set the optional settings: set the port to the desired one, and the name of the container (altoroj)
