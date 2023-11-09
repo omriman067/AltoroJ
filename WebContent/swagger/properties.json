@@ -154,7 +154,8 @@
             "in": "path",
             "required": true,
             "description": "Account id",
-            "type": "string"
+            "type": "string",
+            "example": "800002"
           }
         ],
         "responses": {
@@ -193,7 +194,8 @@
             "in": "path",
             "required": true,
             "description": "Account id",
-            "type": "string"
+            "type": "string",
+            "example": "800003"
           }
         ],
         "responses": {
@@ -233,7 +235,8 @@
             "in": "path",
             "required": true,
             "description": "Account id",
-            "type": "string"
+            "type": "string",
+            "example": "800002"
           },
           {
             "in": "body",
@@ -378,7 +381,8 @@
             "name": "feedbackId",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "example": "1"
           }
         ]
       }
