@@ -6,7 +6,7 @@
     },
     "servers": [
       {
-        "url": "/AltoroJ/api"
+        "url": "/api"
       }
     ],
     "tags": [
