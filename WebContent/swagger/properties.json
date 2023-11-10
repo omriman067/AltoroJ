@@ -5,7 +5,7 @@
     "version": "1.0.2"
   },
   
-  "basePath": "/AltoroJ/api",
+  "basePath": "/api",
   "tags": [
     {
       "name": "1. Login",
