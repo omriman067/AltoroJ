@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  nginx-njs:
+    image: nginx:latest
+    container_name: nginx-njs
+    command: ["/bin/sh", "-c", "apt-get update&&apt-get install -y dos2unix&&dos2unix -n /tmp/nginx_startup.sh /tmp/nginx_startup_unix.sh&&chmod +x /tmp/nginx_startup_unix.sh&&./tmp/nginx_startup_unix.sh&&nginx -g 'daemon off;'"]
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/bundle.js:/etc/nginx/bundle.js
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/http.template:/etc/nginx/conf.d/http.template
+      - ./nginx/fixappPolicy.json:/etc/nginx/fixappPolicy.json
+      - ./nginx/nginx_startup.sh:/tmp/nginx_startup.sh
+    restart: unless-stopped
+  altoroj-3.4-thin:
+    image: altoroj-3.4-thin
+    container_name: altoroj-3.4-thin
+    ports:
+      - "8130:8080"
+    restart: unless-stopped
