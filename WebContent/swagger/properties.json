@@ -604,16 +604,13 @@
             },
             "email": {
               "type": "string",
-              "format": "email",
-              "example": "jsmtih@altoromutual.com"
+              "format": "email"
             },
             "subject": {
-              "type": "string",
-              "example": "Amazing web design"
+              "type": "string"
             },
             "message": {
-              "type": "string",
-              "example": "I like the new look of your applicaiton"
+              "type": "string"
             }
           }
         },
